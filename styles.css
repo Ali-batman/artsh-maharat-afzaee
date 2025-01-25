@@ -1,0 +1,75 @@
+body {
+    font-size: 4vw;  / تنظیم اندازه فونت به اندازه 4% از عرض صفحه /
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2vw;  / فاصله داخلی هدر به نسبت عرض صفحه /
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 1vw;  / فاصله بین آیتم‌های ناوبری /
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 3vw;  / فاصله داخلی در بخش اصلی /
+}
+
+section {
+    margin: 2vw 0;  / فاصله بالا و پایین بخش‌ها /
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 1vw;
+}
+
+form input, form textarea {
+    margin-bottom: 2vw;
+    padding: 2vw;
+    border: 1px solid #ccc;
+}
+
+img {
+    width: 100%;   / عرض تصاویر به اندازه 100% از عرض صفحه /
+    height: auto;  / ارتفاع تصویر به‌طور خودکار تنظیم می‌شود /
+}
+
+/ تنظیمات واکنش‌گرا برای صفحه‌های کوچک (گوشی‌ها) /
+@media (max-width: 768px) {
+    body {
+        font-size: 5vw;  / اندازه فونت در گوشی‌ها به اندازه 5% از عرض صفحه /
+    }
+    header {
+        padding: 5vw;  / فاصله داخلی هدر در گوشی‌ها /
+    }
+    img {
+        width: 100%;  / تصاویر به اندازه عرض صفحه گوشی تنظیم می‌شود */
+    }
+}
+footer {
+    background-color: #3b3b3b;  /* رنگ پس‌زمینه /
+    color: white;  / رنگ متن /
+    text-align: center;
+    padding: 20px;  / فاصله داخلی /
+    font-size: 24px;  / اندازه فونت بزرگ‌تر */
+}
